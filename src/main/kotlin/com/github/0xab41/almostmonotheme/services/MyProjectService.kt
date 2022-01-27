@@ -1,7 +1,7 @@
-package org.jetbrains.plugins.template.services
+package com.github.0xab41.almostmonotheme.services
 
 import com.intellij.openapi.project.Project
-import org.jetbrains.plugins.template.MyBundle
+import com.github.0xab41.almostmonotheme.MyBundle
 
 class MyProjectService(project: Project) {
 
