@@ -1,18 +1,12 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.0xab41.almostmonotheme</id>
-    <name>AlmostMonoTheme</name>
-    <vendor>0xab41</vendor>
+    <name>Almost Mono Theme</name>
+    <vendor>Abhilash Meesala</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.0xab41.almostmonotheme.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.0xab41.almostmonotheme.services.MyProjectService"/>
+        <themeProvider id="almostmonotheme-light" path="/theme/almostmono.theme.json" />
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.0xab41.almostmonotheme.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
